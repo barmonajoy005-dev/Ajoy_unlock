@@ -11,15 +11,14 @@ do
     echo "0. Exit"
     echo
 
-    read -p "Choice: " opt
+    echo -n "Choice: "
+    read opt
 
     case "$opt" in
         1)
-           
             echo "Free Fire MAX Disabled"
             ;;
         2)
-        
             echo "Free Fire MAX Enabled"
             ;;
         0)
@@ -32,5 +31,6 @@ do
     esac
 
     echo
-    read -p "Press Enter to continue..."
+    echo "Press Enter to continue..."
+    read dummy
 done
